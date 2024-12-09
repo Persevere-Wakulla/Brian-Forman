@@ -1,0 +1,504 @@
+@font-face {
+  font-family: myFont;
+  src: url("src/fonts/Custom Fonts/dhangdose_outline.woff")
+}
+
+@font-face {
+  font-family: newWay;
+  src: url("src/fonts/Custom Fonts/twigs-webfont.woff")
+}
+
+:root {
+  --primary: #bc4123;
+  --secondary: black;
+}
+
+body {
+  margin: 0;
+  background: url('../assets/pexels-nick-collins-1293120.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+
+  height: 100vh;
+
+}
+
+* {
+  color: rgb(231, 226, 226);
+  margin: 0;
+}
+
+.kids>li>a {
+  color: goldenrod !important;
+}
+
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+.head {
+  height: 100px;
+}
+
+.line {
+  border-bottom: 3px solid var(--primary);
+}
+
+header .nav {
+  height: 80px;
+
+}
+
+/* Navbar */
+header nav {
+  padding: 20px;
+}
+
+.navbar-brand{
+  font-size: 2rem;
+  font-family: myFont;
+  color: goldenrod;
+}
+
+.navbar-brand:hover{
+  cursor: pointer;
+  color: goldenrod;
+}
+
+header nav a {
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 21px;
+}
+
+header nav a.active {
+  background: var(--primary)
+}
+
+.navbar-toggler-icon{
+  font-size: 1.8rem ;
+  transition: 2s;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.navbar-toggler-icon:hover{
+  transform: rotate(90deg);
+  border: 3px solid goldenrod;
+  background-color: #bc4123;
+}
+
+
+
+#flex button{
+  background: none;
+  font-size: 18px;
+  box-shadow: 3px 3px;
+  color: goldenrod;
+}
+
+#flex button:hover{
+  background-color: #c15d44;
+}
+
+h5{
+  font-size: 2rem;
+  color: black;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-h1 {
+  color: black;
+  font-family: myFont;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.home-image{
+  box-shadow: 8px 8px goldenrod;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  
+}
+
+h2 {
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+
+.about-container h2 {
+  color: black;
+  font-size: 5rem;
+  font-family: myFont;
+}
+
+.about-container p {
+  background-color: rgba(235, 231, 231, 0.228);
+  color: rgba(15, 12, 5, 0.72);
+  font-family: newWay;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+.about-img {
+  box-shadow: 8px 8px goldenrod;
+  margin: 5rem auto;
+  width: 80%;
+}
+
+.recipe-container {
+  padding: 2rem;
+}
+
+.recipe-img {
+  width: 100%;
+}
+
+.single-recipe {
+  text-align: center;
+  background-color: black;
+  width: 25rem;
+  box-shadow: 10px 8px 20px goldenrod
+}
+
+.top-text {
+  font-family: newWay;
+  color: black;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.text {
+  font-family: newWay;
+  color: goldenrod;
+  /* font-size: 2.5rem; */
+  width: 75%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+h1 {
+  /* font-family: Poppins; */
+  margin-top: 1rem;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.top-container h1 {
+  color: black;
+  font-family: myFont;
+}
+
+.recipe-details {
+  padding: 2rem;
+  background-color: rgba(31, 24, 24, 0.566);
+  font-size: 20px;
+  margin: 0 auto;
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 
+  goldenrod;
+  margin-top: 5rem;
+  /* margin-bottom: 5rem; */
+}
+
+.recipe-details h2 {
+  border-bottom: 3px solid var(--primary);
+  color: goldenrod;
+  font-size: 2.5rem;
+  font-family: myFont;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.recipe-details p {
+  color: goldenrod;
+}
+
+.recipe-details li {
+  color: goldenrod;
+}
+
+.details-img {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.ser {
+  display: flex;
+  gap: 1rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.search-container label {
+  font-size: 30px;
+  color: black;
+}
+
+#search {
+  font-size: 18px;
+  color: black;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.btn-container button {
+  box-shadow: 5px 5px;
+  color: black;
+  font-size: 24px;
+  height: 3rem;
+  transition: .5s;
+}
+
+.btn-container button:hover {
+  background-color: goldenrod;
+}
+
+
+.btn-container button:active {
+  background: var(--primary);
+  box-shadow: none;
+}
+
+.contact {
+  width: 50%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.contact h3 {
+  color: black;
+}
+
+.contact span {
+  color: black;
+}
+
+.contact button {
+  font-size: 18px;
+  color: black;
+  box-shadow: 5px 5px;
+  transition: 0.5s;
+}
+
+.contact button:hover {
+  background-color: goldenrod;
+
+}
+.contact button:active{
+  box-shadow: none;
+}
+
+
+Form Label {
+  font-size: 24px;
+}
+
+div.help-layout {
+  padding: 2rem;
+}
+
+.help-layout h2 {
+  font-size: 3rem;
+  font-family: myFont;
+}
+
+.help-layout p {
+  font-family: newWay;
+  color: black;
+  font-size: 2.2rem;
+}
+
+.help-layout nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.help-layout nav a {
+  border-radius: 4px;
+  background: var(--primary);
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+  font-size: 1.4rem;
+  box-shadow: 5px 5px;
+  text-decoration: none;
+  transition: 2s;
+  font-weight: 600;
+}
+
+.help-layout nav a:hover {
+  background-color: goldenrod;
+  border-color: var(--primary);
+}
+
+.help-layout nav a.active {
+  border: none;
+}
+
+
+Form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+Form input,
+Form label span,
+Form textarea {
+  display: block;
+}
+
+Form input,
+Form textarea {
+  margin-bottom: 30px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 0;
+  width: 100%;
+  color: var(--secondary);
+}
+
+Form label span {
+  margin-bottom: 10px;
+}
+
+.sub {
+  width: 10rem;
+  display: block;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrapper button {
+  padding: 10px 20px;
+  background: rgba(31, 24, 24, 0.566);
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.accordion {
+  width: 80%;
+}
+
+.item {
+  border-radius: 10px;
+  margin-right: 5rem;
+  background: rgba(31, 24, 24, 0.566);
+  margin-bottom: 10px;
+  padding: 10px 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: goldenrod;
+  font-family: newWay;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content {
+  font-size: 18px;
+  color: goldenrod;
+  height: auto;
+}
+
+@media (max-width: 575px) {
+  #flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #FU {
+    display: block;
+    background-color: rgba(31, 24, 24, 0.001) !important;
+  }
+
+
+}
+
+@media (max-width: 800px) {
+  .search-container {
+    margin-left: 4rem;
+    padding: 2rem;
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .recipe-details {
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .recipe-details {
+    width: 90%;
+  }
+
+  .wrapper button {
+    margin-right: 5rem;
+  }
+
+  input#search {
+    width: 10rem;
+  }
+
+  header nav a {
+    color: black;
+  }
+}

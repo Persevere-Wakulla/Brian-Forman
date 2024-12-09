@@ -1,0 +1,488 @@
+[
+    {
+       "name": "1000cc Go-Kart" ,
+       "image": "images/1000cc-go-kart.jpg",
+       "price": 10000.00,
+       "category": "off-road vehicles",
+       "quantity": 5,
+       "details": "This is a custom built shifter kart. Made for high speed kart racing event"
+
+    },
+    {
+        "name": "1990 Chateau Lafitte Rothschild" ,
+        "image": "images/1990_Chateau_Lafite_Rothschild.png",
+        "price": 13669.00,
+        "category": "fine wine",
+        "quantity": 3,
+        "details": "This is a very elegant wine imported from France made from the finest grapes. Aged for over 30yrs"
+ 
+     },
+     {
+        "name": "1994 Petrus Pomerol",
+        "image": "images/1994_Petrus_Pomerol.png",
+        "price": 2795.00,
+        "category": "fine wine",
+        "quantity": 4,
+        "details": "30 year old aged wine imported from Italy "
+ 
+     },
+     {
+        "name": "1990 Petrus Pomerol",
+        "image": "images/1990_Petrus_Pomerol_12x750ml.png",
+        "price": 65759.00,
+        "category": "fine wine",
+        "quantity": 6,
+        "details": "some of the best wine money can buy imported from Italy just for the man/woman trying to impress their guest one way or another"
+ 
+     },
+     {
+        "name":"2015 Domaine de la Romaine Continental",
+        "image":"images/2015_Domaine_de_la_Romaine-Conti.png" ,
+        "price": 103500.00,
+        "category": "fine wine",
+        "quantity": 2,
+        "details": "California's best made right here in America strait from Vint Marketplace"
+ 
+     },
+     {
+        "name": "AI Human Robot",
+        "image": "images/adam-lukomski-ja9VHwgcABo-unsplash.jpg",
+        "price": 105000.00,
+        "category": "electronics",
+        "quantity": 10,
+        "details": "A full size fully functional artificial intelligent robot that acts human. This robot can do everything even kid and pet friendly "
+ 
+     },
+     {
+        "name": "Affenpinscher",
+        "image": "images/Affenpencher.png",
+        "price": 5000.00,
+        "category": "pets",
+        "quantity": 3,
+        "details": "This is a rare breed small size dog well trained and kid friendly"
+ 
+     },
+     {
+        "name": "AVI Richards Pool-table",
+        "image": "images/avi-richards-5RF42oKw204-unsplash.jpg",
+        "price": 5000.00,
+        "category": "sporting goods",
+        "quantity": 6,
+        "details": "This is a elegant pool table made of maple oak. ITs a full size pool table so there is plenty of room to play the game you love."
+ 
+     },
+     {
+        "name": "Billion Jacobs",
+        "image": "images/Billon-Jacobs.png",
+        "price": 250000.00,
+        "category": "men accessories",
+        "quantity": 4,
+        "details": "This has to be one of the most beautiful watches I have ever seen. It has diamonds and assorted gems, see thru, gold and much much more"
+ 
+     },
+     {
+        "name": "Pontiac SkyLark",
+        "image": "images/blue-car-for-sale.jpg",
+        "price": 30000.00,
+        "category": "vehicles",
+        "quantity": 1,
+        "details": "1964 Pontiac Skylark old school baby with everything original all way down to the hubcaps. You wont't find a deal better than this no where on the planet "
+ 
+     },
+     {
+        "name": "Bull terrier",
+        "image": "images/Bull-Terrier.png",
+        "price": 5000.00,
+        "category": "pets",
+        "quantity": 3,
+        "details": "Pure bread bull terrier fully trained people friendly and loves kids "
+ 
+     },
+     {
+        "name": "Chinese Sharpei",
+        "image": "images/chinese_sharpei.jpg",
+        "price": 7500.00,
+        "category": "pets",
+        "quantity": 6,
+        "details": "This most adorable pet money can buy. He is pure bread. Ready to be trained "
+ 
+     },
+     {
+        "name": "Dalmatian",
+        "image": "images/dalmatian-dog.jpg",
+        "price": 7500.00,
+        "category": "pets",
+        "quantity": 5,
+        "details": "This is a untrained pup up to date on shots and dewormed. This pup will grow up to be very territorial and aggressive, but a overall awesome pet"
+ 
+     },
+     {
+        "name": "Huelot",
+        "image": "backend/mages/Huelot.png",
+        "price": 10000.00,
+        "category": "men accessories",
+        "quantity": 8,
+        "details": "This is a casual mens watch thats makes a man stand out in front of the ladies as that guy"
+ 
+     },
+     {
+        "name": "French Bully",
+        "image": "images/French_Bully.jpg",
+        "price": 7500.00,
+        "category": "pets",
+        "quantity": 7,
+        "details": "This is a frisky small breed dog thats tons of fun for the kids to enjoy plus you can make your money back breeding him because every one wants one"
+ 
+     },
+     {
+        "name": "Jet Pack",
+        "image": "images/jet pack.jpg",
+        "price": 75000.00,
+        "category": "off-road vehicles",
+        "quantity": 6,
+        "details": "This is a off-road vehicle made for flying around in the country. Out of the way of electric wires, telephone polls and trees"
+ 
+     },
+     {
+        "name": "1874 Lafitte Rothschild",
+        "image": "images/Lafite_Rothschild_1874_750ml.png",
+        "price": 24999.00,
+        "category": "fine wine",
+        "quantity": 6,
+        "details": "Some of the best Aged wine imported from France just in time for your special celebration"
+ 
+     },
+     {
+        "name": "Rolls Royce Wraith",
+        "image": "images/mansory_rolls_royce_wraith_25.png",
+        "price": 500000.00,
+        "category": "vehicles",
+        "quantity": 4,
+        "details": "Cream and gold fully loaded ready to catch all the ladies/mens attention ride around in style"
+ 
+     },
+     {
+        "name": "S.R.T",
+        "image": "images/MC-1.jpg",
+        "price": 125000.00,
+        "category": "vehicles",
+        "quantity": 3,
+        "details": "This is a beautiful car that is extremely fast. Fully loaded for your comfort"
+ 
+     },
+     {
+        "name": "Cadillac",
+        "image":"images/MC-2.jpg" ,
+        "price": 85000.00,
+        "category": "vehicles",
+        "quantity": 2,
+        "details": "This is a 2022 cadillac fully loaded with custom rims and a custom paint job"
+ 
+     },
+     {
+        "name": "Lamborghini Super Suv",
+        "image": "images/MC-6-2025-lamborghini-urus-super-suv.jpg",
+        "price": 300000.00,
+        "category": "vehicles",
+        "quantity": 8,
+        "details": "This a 2020 lambo one of the nicer fully loaded luxury vehicles. This is a must have for you ballers"
+ 
+     },
+     {
+        "name": "Mayback",
+        "image": "images/MC-7-maybach-vision-6.jpg",
+        "price": 500000.00,
+        "category": "vehicles",
+        "quantity": 6,
+        "details": "For all you ballers out there with that big bank roll. Candy-apple with the matching dub edition rims. this is a very slick expensive ride "
+ 
+     }, {
+        "name": "BMW X-6",
+        "image": "images/MC-9-BMW-X6-Vantablack-1.png",
+        "price": 45000.00,
+        "category": "vehicles",
+        "quantity": 3,
+        "details": "2020 flat black and chrome beamer. This is a sporty ride for a sporty driver "
+ 
+     },
+     {
+        "name": "Cadillac Burlap",
+        "image": "images/MC-10-burlappcar-cadilac-mid-1.jpg",
+        "price": 95000.00,
+        "category": "vehicles",
+        "quantity": 7,
+        "details": "This is burlapper cadillac fully loaded cream with 23inch rims "
+ 
+     },
+     {
+        "name": "Dodge Charger",
+        "image": "images/MC-14-maxresdefault.jpg",
+        "price": 100000.00,
+        "category": "vehicles",
+        "quantity": 8,
+        "details": " This is a limited edition Dodge Charger only 20 of its make and model ever made"
+ 
+     },
+     {
+        "name": "Cadillac Celestial",
+        "image": "images/MC-15-my25-celestiq.jpg",
+        "price": 50000.00,
+        "category": "vehicles",
+        "quantity": 5,
+        "details": "This is a 2015 model cadillac made to be more  affordable for the poor hustlers out there. Get ya money up so you can purchase the finer things in life "
+ 
+     },
+     {
+        "name": "Rolls Royce",
+        "image": "images/MC-16-rolls-royce-black-badge-wraith-by-spofec.jpg",
+        "price": 250000.00,
+        "category": "vehicles",
+        "quantity": 3,
+        "details": "Black on black 2022 Rolls Royce Badge Wraith a sporty ride the the Bosses out there in the world looking to prove a point"
+ 
+     },
+     {
+        "name": "Petrus 1993",
+        "image": "images/Petrus_1993.png",
+        "price": 3170.00,
+        "category": "fine wine",
+        "quantity": 12,
+        "details": "Ion know I guess the is a sample of the best wine Imported from Italy. I seems this bottle is on sale. So you poor hustle better grab it for to impress ya girlbefore anothe poor joker beat you to it. "
+ 
+     },
+     {
+        "name": "Petrus 2010",
+        "image": "images/Petrus_2010_Millesima.png",
+        "price": 6459.00,
+        "category": "fine wine",
+        "quantity": 6,
+        "details": "Its another one imported from Italy a grade little younger but a little better grab it before its gone"
+ 
+     },
+     {
+        "name": "Petrus 2012 ",
+        "image": "images/Petrus_2012.png",
+        "price": 29950.00,
+        "category": "fine wine",
+        "quantity": 8,
+        "details": "Same smooth taste just a different price grab a bottle of the best Italian wine on the market before its gone"
+ 
+     },
+     {
+        "name": "Yorkshire (yorkie)",
+        "image": "images/pexels-adrianna-calvo-21259.jpg",
+        "price": 2500.00,
+        "category": "pets",
+        "quantity": 4,
+        "details": "Smart beautiful lovable dog. This is one of the smartest of the small breeds to own"
+ 
+     },
+     {
+        "name": "Schnauzer",
+        "image": "images/pexels-sebastian-coman-travel-3448793.jpg",
+        "price": 3500.00,
+        "category": "pets",
+        "quantity": 7,
+        "details": "These are some friendly dogs just right for a loving family. Rather they are for your kids or momma"
+ 
+     },
+     {
+        "name": "American Cocker spaniel",
+        "image": "images/two-young-american-cocker-spaniel-dogs_Kebal-Oleksandra_Shutterstock.jpg",
+        "price": 2500.00,
+        "category": "pets",
+        "quantity": 6,
+        "details": "Some of the prettiest dogs money can buy we got 2 buy one get the othe half off brothers and sisters"
+ 
+     },
+     {
+        "name": "Husky",
+        "image": "images/pexels-pixabay-235805.jpg",
+        "price": 2500.00,
+        "category": "pets",
+        "quantity": 5,
+        "details": "This pup is looking for a home. When she grows up she will be very territorial. all her shots are up to date and she has been dewormed twice"
+ 
+     },
+     {
+        "name": "Poodle Pup",
+        "image": "images/pexels-dominic-buccilli-981062.jpg",
+        "price": 1500.00,
+        "category": "pets",
+        "quantity": 8,
+        "details": "This pup is looking for a home with you easy to train very obedient. Loves to play with kids"
+ 
+     },
+     {
+        "name": "Miniature Poodles",
+        "image": "images/poodle-miniature-toy1.jpg",
+        "price": 5500.00,
+        "category": "pets",
+        "quantity": 6,
+        "details": "Miniature Poodles buy one get the othe other half off brother and sister breed. People friendly loves kids. Up to date on shots and have been dewormed twice. Easy to train"
+ 
+     },
+     {
+        "name": "Air Force Ones",
+        "image": "images/pexels-erik-mclean-4061385.jpg",
+        "price": 1000.00,
+        "category": "men accessories",
+        "quantity": 12,
+        "details": "Designer Louis Vuitton Air Force ones made especially for you big money ballers. Orange, tan, and doo-doo brown"
+ 
+     },
+     {
+        "name": "Fernando",
+        "image": "images/pexels-fernando-arcos-190819.jpg",
+        "price": 2500.00,
+        "category": "men accessories",
+        "quantity": 10,
+        "details": "This is a water-proof sports watch. Made of sterling silver and 14kt gold"
+ 
+     },
+     {
+        "name": "Jordans",
+        "image": "images/pexels-mnz-1598505.jpg",
+        "price": 599.00,
+        "category": "men accessories",
+        "quantity": 9,
+        "details": "Gray and gold Jordan 1's. This is the first pair of shoes Micheal Jordan ever came out with"
+ 
+     },
+     {
+        "name": "Adamkimmel",
+        "image": "images/pexels-pixabay-277319.jpg",
+        "price": 10000.00,
+        "category": "men accessories",
+        "quantity": 8,
+        "details": "Classic black and silver watch. this watch has a very sleek and professional design"
+ 
+     },
+     {
+        "name": "Siamese Cat",
+        "image": "images/pexels-pixabay-357141.jpg",
+        "price": 2000.00,
+        "category": "pets",
+        "quantity": 9,
+        "details": "This a elegant African cat. These are the most lovable cat known to mankind unless you are a cat or snake thyen its another story"
+ 
+     },
+     {
+        "name": "Rolex",
+        "image": "images/pexels-pixabay-364822.jpg",
+        "price": 7500.00,
+        "category": "men accessories",
+        "quantity": 14,
+        "details": "The deep sea rollie is water proof under unknown pressure. This is also a classic of the Rolex's"
+ 
+     },
+     {
+        "name": "Rotate",
+        "image": "images/pexels-rotate-watches-5895645.jpg",
+        "price": 1000.00,
+        "category": "men accessories",
+        "quantity": 24,
+        "details": "This is the gold casual watch with a leather. this is the watch for the professional businessman "
+ 
+     },
+     {
+        "name": "Rotate",
+        "image": "images/pexels-rotate-watches-5895646.jpg",
+        "price": 750.00,
+        "category": "men accessories",
+        "quantity": 9,
+        "details": "This watch is for the poor hustling broke joker wanna be business that needs to step his game up"
+ 
+     },
+     {
+        "name": "Rotate",
+        "image": "images/pexels-rotate-watches-5895647.jpg",
+        "price": 1500.00,
+        "category": "men accessories",
+        "quantity": 17,
+        "details": "This is the mechanical version of the sportier kind of the rotate watches"
+ 
+     },
+     {
+        "name": "Fossil",
+        "image": "images/pexels-suherli-ferdy-5447382.jpg",
+        "price": 1200.00,
+        "category": "men accessories",
+        "quantity": 18,
+        "details": "This the classic fossil mechanical watch. Gold with the alligator wrist band"
+ 
+     },
+     {
+        "name": "Pocket Bully",
+        "image": "images/pocket-bully-dog.jpg",
+        "price": 5000.00,
+        "category": "pets",
+        "quantity": 5,
+        "details": "My opinion the most awesome dog in the world. Short muscular dogs. With a very sporty attitude"
+ 
+     },
+     {
+        "name": "Rolls Royce",
+        "image": "images/Rolls-Royce-Ghost.png",
+        "price": 400000.00,
+        "category": "vehicles",
+        "quantity": 5,
+        "details": "The Rolls Royce Ghost fully loaded made for a real bossman. Beige with a gold pearl. Factory 22inch Rolls Royce rims"
+ 
+     },
+     {
+        "name": "Sand Sail",
+        "image": "images/sand-rail-in-saudia-arabia.jpg",
+        "price": 25000.00,
+        "category": "off-road vehicles",
+        "quantity": 8,
+        "details": "You wanna have some fun in the sand then this bad boy is the one for you. Reach speeds over a hundred miles a hour"
+ 
+     },
+     {
+        "name": "Super Sand Rail",
+        "image": "images/saudi-arabia-sand-rail.jpg",
+        "price": 35000.00,
+        "category": "off-road vehicles",
+        "quantity":  6,
+        "details": "This is one of the cleanest customized sand rails I have ever laid my eyes on. I think the price is a steal with all the work done to it in customization"
+ 
+     },
+     {
+        "name": "Ferrari",
+        "image": "images/sports-car-parked-in-barcelona.jpg",
+        "price": 350000.00,
+        "category": "vehicles",
+        "quantity": 2,
+        "details": "This is your one of a kind convertible sports car. Imagine sliding thru the hood in this luxury sports coop with the top let back"
+ 
+     },
+     {
+        "name": "Pool Table",
+        "image": "images/steven-weeks-pdTi4_gxSsY-unsplash.jpg",
+        "price": 2500.00,
+        "category": "sporting goods",
+        "quantity":  16,
+        "details": "Nothing fancy just a pool table for the poor boys who want a pool table but can't afford to buy the wood grain like the rest of the ballers"
+ 
+     },
+     {
+        "name": "Suzuki 1000",
+        "image": "images/the_isle_of_mantt.jpg",
+        "price": 25000.00,
+        "category": "vehicles",
+        "quantity": 4,
+        "details": "This is a fast racing bike. Its already track ready. Buy it and go win ya money back you just can't be afraid to get on the gas and fly"
+ 
+     },
+     {
+        "name": "Zonda Pagani",
+        "image": "images/zonda_f_pagani.jpg",
+        "price": 750000.00,
+        "category": "vehicles",
+        "quantity": 7,
+        "details": "This is one of the most fastest cars in the world. If I had the money I would buy it "
+ 
+     }
+   
+]

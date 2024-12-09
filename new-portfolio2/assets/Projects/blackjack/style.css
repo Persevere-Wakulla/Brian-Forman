@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 15fr 1fr;
+    background: linear-gradient(black, green)
+}
+
+h1 {
+    justify-self: center;
+    align-self: end;
+    padding-top: 1em;
+    color: darkgreen;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+.playing-board {
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    width: 70%;
+    height: 85%;
+    border: 4px solid black;
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+    border-radius: 10%;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.cards {
+    height: 190px;
+    width: 100px;
+}
+
+.game-card {
+    display: none;
+}
+
+
+.computer-hand {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+    /* display: inline-block; */
+    gap: 0px;
+    width: 100%;
+
+
+}
+
+.flip-card {
+    background-color: transparent;
+    background-size: 100% 100%;
+    width: 25%;
+    perspective: 3500px;
+    position: absolute;
+    left: 9.3rem;
+    top: 2.5rem;
+    display: none;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card .flip-card-inner {
+    transform: rotateY(0deg);
+}
+
+.flip-back {
+    transform: rotateY(180deg) !important;
+
+}
+
+.flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+#card-front {
+    height: 140px;
+    width: 95px;
+    border-radius: 5%;
+
+
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.player-hand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#winning-status {
+    color: yellow;
+}
+
+.dealer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#deck {
+    margin: 0 auto;
+
+
+}
+
+.flex {
+    display: flex;
+}
+
+.dealer img {
+    display: grid;
+    width: 7em;
+    height: 12em;
+
+}
+
+#deal {
+    position: relative;
+    width: 10rem;
+    bottom: 2rem;
+    left: 15rem;
+    background-color: rgba(36, 173, 36, 0.8);
+
+}
+
+#deal:hover {
+    background-color: rgba(0, 255, 0, .8);
+    color: white;
+}
+
+#play-again {
+    display: none;
+    position: relative;
+    bottom: 2rem;
+    width: 10rem;
+    left: 15rem;
+    background-color: rgba(255, 0, 0, .8);
+
+}
+
+#play-again:hover {
+    background-color: tomato;
+    color: white;
+}
+
+#hit-me {
+    display: none;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+    background-color: rgba(0, 0, 255, .8);
+}
+
+#hit-me:hover {
+    background-color: rgb(43, 83, 192);
+    color: white;
+}
+
+#stay {
+    display: none;
+    position: absolute;
+    bottom: 2rem;
+    width: 5rem;
+    left: 1rem;
+    background-color: rgba(255, 0, 0, .8);
+
+}
+
+#stay:hover {
+    background-color: tomato;
+    color: white;
+}
+
+
+.button-container {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 10%;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+}

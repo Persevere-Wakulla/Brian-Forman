@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./store.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- <i class="fas fa-shopping-cart"></i> -->
+      <h2 class="logo">pinkflamingo's.com</h2>
+      <div class="right">
+        <div class="search-bar-container">
+          <input id="search-bar" type="text" placeholder="search...." />
+        </div>
+        <div class="greeting"></div>
+        <div class="log-signIn-btn">
+          <div class="head-btn">
+            <button id="log-in" type="button">Login</button>
+            <button id="sign-up" type="button">SignUp</button>
+          </div>
+        </div>
+        <div id="cart">
+          <span>&#128722;</span>
+        </div>
+        <div id="cart-modal" class="modal">
+          <button
+            type="button"
+            id="close-btn"
+            class="close"
+            title="Close Modal"
+          >
+            &times;
+          </button>
+          <div class="cart-container"></div>
+          <button type="button" id="cancel" class="cancelbtn">Close</button>
+        </div>
+      </div>
+      <div id="modal-container1" class="modal">
+        <button type="button" class="close" title="Close Modal">&times;</button>
+        <form
+          class="modal-content animate"
+          action="/action_page.php"
+          method="post"
+        >
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input
+              id="username"
+              type="text"
+              placeholder="Enter Username"
+              name="uname"
+              required
+            />
+            <label for="psw"><b>Password</b></label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+            <button id="login" type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Remember me
+            </label>
+          </div>
+          <div class="container">
+            <button type="button" id="cancel3" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+      <!-- The Modal (contains the Sign Up form) -->
+      <div id="modal-container2" class="modal">
+        <button type="button" class="close" title="Close Modal">&times;</button>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr />
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              name="psw-repeat"
+              required
+            />
+
+            <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Remember me
+            </label>
+
+            <p class="terms">
+              By creating an account you agree to our
+              <a href="#">Terms & Privacy</a>.
+            </p>
+
+            <div class="clearfix">
+              <button type="submit" class="signup">Sign Up</button>
+              <button type="button" class="cancelbtn">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </header>
+    <nav>
+      <button id="home" class="btn" type="button">Home</button>
+      <button class="btn" type="button">About</button>
+      <button id="product" class="btn" type="button">Product</button>
+      <button class="btn" type="button">Contact Us</button>
+    </nav>
+    <div class="banner-container">
+      <img src="./images/pablotheflamingo.jpg" alt="" />
+      <div>
+        <h1><span>Lets Get</span><br /><span class="shop"> Shopping</span></h1>
+      </div>
+    </div>
+    <div class="featured-container">
+      <div class="feature-top">
+        <h2>Featured</h2>
+        <hr class="feature-line" />
+      </div>
+      <div class="featured-items">
+        <div class="card">
+          <img class="thumb-nail-one" src="./images/Diamond Ring.png" alt="" />
+          <h3 class="feature-title">White Gold Plated Priness</h3>
+          <h3>Price $9.99</h3>
+          <div class="buy">
+            <input class="quantity" type="text" placeholder="1" />
+            <button class="shop-now" type="button">Shop Now</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb-nail-one" src="./images/gaming tv.png" alt="" />
+          <h3 class="feature-title">Samsung 49inch Curved Gaming Moniter</h3>
+          <h3>Price $999.99</h3>
+          <div class="buy">
+            <input class="quantity" type="text" placeholder="1" />
+            <button class="shop-now" type="button">Shop Now</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="thumb-nail-one"
+            src="./images/Women's Outfit.png"
+            alt=""
+          />
+          <h3 class="feature-title">DANVOUY Womens Casual T-Shirt</h3>
+          <h3>Price $12.99</h3>
+          <div class="buy">
+            <input class="quantity" type="text" placeholder="1" />
+            <button class="shop-now" type="button">Shop Now</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb-nail-one" src="./images/Men's Shirt.png" alt="" />
+          <h3 class="feature-title">Men's Casual Slim Fit</h3>
+          <h3>Price $15.99</h3>
+          <div class="buy">
+            <input class="quantity" type="text" placeholder="1" />
+            <button class="shop-now" type="button">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-page">
+      <div class="about-top">
+        <h2>About</h2>
+        <hr class="about-line" />
+      </div>
+      <div class="about-container">
+        <h1>About</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          laudantium dolores itaque suscipit harum voluptatum quam, accusantium
+          aliquid amet? Natus dolor quas facere blanditiis! A architecto amet
+          sapiente voluptate voluptas.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. At rerum id
+          maxime, magnam nesciunt ea velit nostrum officiis dolorum odio
+          deserunt sed esse nemo eum asperiores cupiditate nisi ad autem, quam
+          placeat tempore natus! A eligendi laboriosam, sit id et optio vitae
+          illum, quas natus maxime adipisci, earum nisi accusantium.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum
+          temporibus obcaecati distinctio, repudiandae dolore! Amet mollitia
+          aliquid quis odio magni, tenetur quaerat eaque repellendus tempore
+          natus odit nihil sunt officiis velit minus culpa. Excepturi, ipsum
+          reiciendis! Earum doloribus, quae, praesentium dignissimos assumenda
+          ex consectetur perferendis expedita quod beatae ducimus qui
+          cupiditate, vitae voluptate debitis eligendi enim officia repellendus
+          a? Tempore alias eum nam quidem dolorem est ea error ipsam voluptatem
+          iusto non, autem illo, eius sed repellat qui nisi, eaque dicta
+          repellendus fuga? Adipisci distinctio, quasi autem, laboriosam modi
+          tempore vel nulla officia animi, culpa neque numquam soluta corporis.
+        </p>
+      </div>
+    </div>
+    <div class="contact-page">
+      <div class="contact-top">
+        <h2>Contact Us</h2>
+        <hr class="contact-line" />
+      </div>
+      <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form action="forms/contact.php" method="post" class="php-email-form">
+          <div>
+            <div>
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Your Name"
+                required=""
+              />
+            </div>
+
+            <div>
+              <input
+                type="email"
+                class="form-control email"
+                name="email"
+                placeholder="Your Email"
+                required=""
+              />
+            </div>
+
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                placeholder="Subject"
+                required=""
+              />
+            </div>
+
+            <div>
+              <textarea
+                class="form-control"
+                name="message"
+                rows="6"
+                placeholder="Message"
+                required=""
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="product-page">
+      <div class="product-top">
+        <h2>Product</h2>
+        <hr class="product-line" />
+      </div>
+      <div class="product-container">
+        <div class="nav-sidebar">
+          <button class="btn" type="button">All</button>
+          <button class="btn" type="button">Women's Clothing</button>
+          <button class="btn" type="button">Men's Clothing</button>
+          <button class="btn" type="button">Electronics</button>
+          <button class="btn" type="button">Jewelery</button>
+        </div>
+        <div class="product-grid"></div>
+        <div id="modal-container3" class="modal">
+          <button class="close" type="button" title="Close Modal">
+            &times;
+          </button>
+          <div class="container card-popUp"></div>
+          <button type="button" id="cancel2" class="cancelbtn">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./store.js"></script>
+  </body>
+</html>

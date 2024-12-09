@@ -1,0 +1,242 @@
+body{
+    
+    background: no-repeat radial-gradient(rgba(62, 44, 233, 0.685), hsl(214, 47%, 23%));
+    /* background-color:hsl(214, 47%, 23%) ; */
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0 auto;
+    
+   /* grid-template-rows: 300px, 1fr, 500px; */
+    
+
+
+    
+    
+}
+.wrapper{
+    /* grid-template-rows: 300px, 1fr, 500px; */
+    display: grid;
+}
+header{
+    grid-row: 1 / 2;
+    margin-bottom: rem;
+}
+.container{
+    border: 5px solid hsl(217, 16%, 45%);
+    display: flex;
+    padding: 1rem;
+    width: 75%;
+    height: 100px;
+    justify-content: space-between;
+    margin: 3em auto;
+    border-radius: 2rem;
+    /* min-width: 20rem; */
+
+}
+    
+    
+    
+.score_box{
+    background-color: white;
+    width: 20%;
+    text-align: center;
+    font-size: 24px;
+    color:hsl(229, 64%, 46%) ;
+    border-radius: 1rem;
+}
+.main-container>*:not(#bg-triangle) {
+    position: absolute;
+}
+
+.main-container {
+    position: relative;
+    margin: 0 auto;
+    width: min-content;
+    grid-row: 2 / 3;
+    margin-top: 5rem;
+    margin-bottom: 13rem;
+}
+
+.generic-piece {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 1rem solid black;
+}
+
+
+#paper{
+    background-color: white;
+    border: 1rem solid blue;
+    border-radius: 50%;
+    padding: 1rem;
+    left: -3rem;
+    top: -2rem;
+    box-shadow: inset .1rem .3rem .3rem .3rem lightgray ;
+    
+}
+#paper:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    
+
+}
+
+
+.rock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1rem solid red;
+    box-shadow: inset .1rem .3rem .3rem .3rem lightgray ;
+}
+
+.paper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1rem solid blue;
+    box-shadow: inset .1rem .3rem .3rem .3rem lightgray ;
+
+    
+}
+.scissors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1rem solid orange;
+    box-shadow: inset .1rem .3rem .3rem .3rem lightgray ;
+
+}
+
+#rock{
+    background-color: white;
+    border: 1rem solid red;
+    border-radius: 50%;
+    padding: 1.5rem;
+    bottom: -3.5rem;
+    left: 5.5rem;
+    box-shadow: inset .1rem .3rem .3rem .3rem lightgray ;
+}
+#rock:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#scissors{
+    background-color: white;
+    border: 1rem solid orange;
+    border-radius: 50%;
+    padding: 1rem;
+    right: -3rem;
+    top: -2rem;
+    box-shadow: inset .1rem .3rem .3rem .3rem lightgray ;
+  
+}
+#scissors:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#bg-triangle{
+    position: relative;
+}
+#pa{
+    border-radius: .5rem;
+    height: 2rem;
+    width: 13rem;
+    margin-left: 2rem;
+    background-color:rgba(62, 44, 233, 0.685) ;
+    transition: transform 500ms;
+     
+     
+
+}
+#computer-selection{
+margin-left:1.5rem ;
+}
+#pa:hover{
+    cursor: pointer;
+    transform: translateY(-.10rem);
+    color: red;
+    background:radial-gradient(rgba(62, 44, 233, 0.685), hsl(214, 47%, 23%));
+}
+#winning-status{
+    margin-top: 5rem;
+    margin-left: 3rem;
+    color: white;
+    font-size: 45px;
+}
+#rules{
+    background: no-repeat radial-gradient(rgba(62, 44, 233, 0.685), hsl(214, 47%, 23%));
+    color: white;
+    padding: 1rem;
+    transition: transform 500ms;
+    /* margin: 1rem; */
+}
+#rules:hover{
+    color: red;
+    transform: translateY(-.10rem);
+}
+#home:hover{
+    color: red;
+    transform: translateY(-.10rem);
+}
+#home{
+    color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    transition: transform 500ms;
+    justify-content: center;
+    height: 1rem;
+    background: no-repeat radial-gradient(rgba(62, 44, 233, 0.685), hsl(214, 47%, 23%));
+
+
+
+}
+footer{
+    grid-row: 3 / 4;
+    margin-top: 5rem;
+
+    /* justify-content: right; */
+}
+#thp{
+    color: white;
+    font-size: 2rem;
+    /* margin-right: 3rem; */
+}
+#yw{
+    visibility: hidden;
+    
+    
+}
+#yl{
+    visibility: hidden;
+}
+#yp{
+    color: white;
+    font-size: 2rem;
+
+}
+.buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+
+
+#playing {
+    /* display: none; */
+    display: flex;
+    display: none;
+    justify-content:space-around;
+    margin-bottom: 15rem;
+
+}
+.attribution{
+    display: block;
+}

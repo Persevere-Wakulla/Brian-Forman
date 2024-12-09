@@ -1,0 +1,785 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: four;
+  src: url("/fonts/Boullevard/boullervard.woff");
+}
+
+@font-face {
+  font-family: three;
+  src: url("/fonts/Boullevard/boullervard_3d_extrude.woff");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --oneG: #f8e6a1;
+  --twoG: #a08350;
+  --threeG: #d9b97b;
+  --primary: #bc4123;
+  --background-color: linear-gradient(#f8e6a1, #a08350, #d9b97b);
+  /* Background color for the entire website, including individual sections */
+  --default-color: #0d0000;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #a08350;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #df1529;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #fbf5f5;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #949292;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --bg-clip: text;
+  --text-fill: transparent;
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+.light-background {
+  --background-color: #f3f1f0;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #858484;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #9e9e9e;
+  --contrast-color: #ffffff;
+}
+
+body {
+  color: var(--surface-color);
+  background-color: black;
+}
+
+.g {
+  font-size: 4rem;
+  font-family: three;
+  font-weight:600;
+  background: var(--background-color);
+  -webkit-background-clip: var(--bg-clip);
+  -webkit-text-fill-color: var(--text-fill);
+}
+
+.welcome {
+  font-family: three;
+  background: var(--background-color);
+  -webkit-background-clip: var(--bg-clip);
+  -webkit-text-fill-color: var(--text-fill);
+  font-size: 2rem;
+}
+
+/* Navbar */
+header {
+  display: flex;
+}
+
+header nav {
+  padding: 20px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  background: var(--background-color);
+  -webkit-background-clip: var(--bg-clip);
+  -webkit-text-fill-color: var(--text-fill);
+}
+
+.navbar-brand:hover {
+  cursor: pointer;
+  color: var(--heading-color);
+}
+
+header nav a {
+  color: var(--default-color);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 21px;
+}
+
+header nav a.active {
+  background: var(--primary)
+}
+
+.navbar-toggler-icon {
+  font-size: 1.8rem;
+  transition: 2s;
+  border: 3px solid var(--default-color);
+  border-radius: 10px;
+}
+
+.navbar-toggler-icon:hover {
+  transform: rotate(90deg);
+  border: 3px solid var(--heading-color);
+  background-color: var(--primary);
+}
+
+.login-Container {
+  position: absolute;
+  right: 0;
+  padding: 0 1rem;
+}
+
+.welcome-container {
+  display: flex;
+  position: absolute;
+  right: 0;
+  padding: 1rem;
+  gap: .5rem;
+  font-weight: 600;
+}
+
+.login-Container input {
+  margin-bottom: 1rem;
+}
+
+.login-btn-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.product-btn-container {
+  margin-top: 5rem;
+}
+
+.product-card h2 {
+  font-family: four;
+  background: var(--background-color);
+  -webkit-background-clip: var(--bg-clip);
+  -webkit-text-fill-color: var(--text-fill);
+}
+
+.dropdown-item:hover{
+  border-radius: 10px;
+ background-color: var(--primary);
+ color: var(--threeG)
+}
+
+.login-btn {
+  font-size: 20px;
+  color: var(--threeG);
+  padding: 12px;
+}
+
+.register-btn {
+  font-size: 20px;
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: var(--threeG);
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: var(--primary);
+  border-radius: 5rem;
+}
+
+.register-btn:hover {
+  background-color: var(--primary);
+  border-radius: 5rem;
+}
+
+.home-title {
+  font-size: 6rem;
+  font-family: four;
+  font-weight: bolder;
+  padding: 1rem;
+  background: var(--background-color);
+  -webkit-background-clip: var(--bg-clip);
+  -webkit-text-fill-color: var(--text-fill);
+}
+
+.home-img {
+  width: 15rem;
+  height: 20rem;
+  margin-bottom: 1rem;
+}
+
+#plus {
+  background-color: var(--heading-color);
+  padding: .6rem;
+  border-radius: 10px;
+}
+
+#plus:hover {
+  background-color: var(--threeG);
+}
+
+#delete {
+  width: 80%;
+}
+
+#delete h3 {
+  font-family: four;
+  font-size: 2.5rem;
+  background: var(--background-color);
+  -webkit-background-clip: var(--bg-clip);
+  -webkit-text-fill-color: var(--text-fill);
+}
+
+
+#info {
+  background-color: rgb(0, 100, 128);
+  border-radius: 10px;
+  padding: .2rem;
+}
+
+#info:hover {
+  background-color: rgb(61, 126, 144);
+  color: black;
+}
+
+#hand {
+  background-color: green;
+  border-radius: 10px;
+  padding: .2rem;
+}
+
+#hand:hover {
+  background-color: rgb(73, 145, 73);
+  color: black;
+}
+
+#trash {
+  background-color: red;
+  border-radius: 10px;
+  padding: .2rem;
+}
+
+#trash:hover {
+  background-color: rgba(255, 0, 0, 0.868);
+  color: black;
+}
+
+.card-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  height: 18rem;
+  margin-bottom: 1rem;
+}
+
+.card-name {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-price {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.add-btn-container {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-img {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+.show-img {
+  width: 100%;
+  height: 40rem;
+}
+
+.modal-img {
+  width: 50rem;
+  height: 20rem;
+}
+
+.kids>li>a {
+  color: var(--heading-color) !important;
+}
+
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+.head {
+  height: 70px;
+}
+
+#FU {
+  height: 4rem;
+}
+
+.line {
+  border-bottom: 3px solid var(--primary);
+}
+
+#flex button {
+  background: var(--primary);
+  font-size: 18px;
+  box-shadow: 3px 3px;
+  color: var(--heading-color);
+}
+
+#flex button:hover {
+  background-color: var(--heading-color);
+  color: var(--primary);
+}
+
+.single-card-container {
+  background-color: rgb(29, 29, 29);
+  box-shadow: 3px 3px 20px var(--twoG);
+  transition: .5s;
+}
+
+.single-card-container:hover {
+  box-shadow: 5px 5px 30px var(--threeG);
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+
+.about-container p {
+  color: var(--threeG);
+  font-family: four;
+  font-size: 24px;
+}
+
+.modal-container {
+  box-shadow: 10px 10px 20px var(--heading-color);
+}
+
+h5 {
+  font-size: 2rem;
+  color: var(--heading-color);
+}
+
+div.help-layout {
+  padding: 2rem;
+}
+
+.help-layout h2 {
+  font-family: three;
+  background: var(--background-color);
+  -webkit-background-clip: var(--bg-clip);
+  -webkit-text-fill-color: var(--text-fill);
+  margin-bottom: 2rem;
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.help-layout p {
+  font-family: four;
+  color: var(--threeG);
+  font-size: 1.5rem;
+}
+
+.help-layout nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.help-layout nav a {
+  border-radius: 4px;
+  background: var(--primary);
+  cursor: pointer;
+  padding: 10px;
+  color: var(--heading-color);
+  font-size: 1.4rem;
+  box-shadow: 5px 5px var(--heading-color);
+  text-decoration: none;
+  transition: 1s;
+  font-weight: 600;
+}
+
+.help-layout nav a:hover {
+  background-color: var(--heading-color);
+  color: var(--accent-color);
+  box-shadow: 5px 5px var(--primary);
+}
+
+.help-layout nav a.active {
+  border: none;
+}
+
+.sub {
+  background-color: var(--primary) !important;
+  color: var(--surface-color);
+  width: 10rem;
+  display: block;
+  margin: auto;
+}
+
+.sub:hover {
+  background-color: var(--twoG);
+  color: #bc4123
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrapper button {
+  font-family: three;
+  margin-top: 1.5rem;
+  margin-right: 4rem;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: var(--twoG);
+  font-weight: bold;
+  font-size: 32px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px var(--heading-color);
+  background-color: var
+}
+
+.wrapper button:hover {
+  background-color: var(--heading-color);
+  color: var(--accent-color);
+  box-shadow: 5px 5px var(--primary);
+  transition: 1s;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.item {
+  border-radius: 10px;
+  margin-right: 5rem;
+  background: var(--primary);
+  margin-top: 1rem;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  box-shadow: 5px 5px var(--heading-color);
+}
+
+.title {
+  font-size: 2rem;
+  background: var(--background-color);
+  -webkit-background-clip: var(--bg-clip);
+  -webkit-text-fill-color: var(--text-fill);
+  font-family: three;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content {
+  font-family: four;
+  font-size: 18px;
+  color: var(--threeG);
+  height: auto;
+}
+
+/* PHP Email Form Messages
+------------------------------*/
+.php-email-form .error-message {
+  display: none;
+  background: var(--accent-color);
+  color: var(--surface-color);
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .loading {
+  display: none;
+  background: var(--surface-color);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: var(--surface-color);
+  animation: php-email-form-loading 1s linear infinite;
+}
+
+@keyframes php-email-form-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* contact */
+.contact .info-wrap {
+  border-radius: 10px;
+  background-color: var(--surface-color);
+  box-shadow: 0px 0px 20px var(--primary);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.contact .info-item i {
+  font-size: 20px;
+  color: var(--default-color);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 40%);
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  color: var(--default-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+}
+
+.contact .info-item p {
+  color: var(--default-color);
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.contact .info-item:hover i {
+  background: var(--primary);
+  color: var(--default-color);
+  cursor: pointer;
+}
+
+.contact .php-email-form {
+  border-radius: 10px;
+  background-color: var(--surface-color);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.contact .php-email-form button[type=submit] {
+  color: var(--heading-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+input {
+  color: #0d0000
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.money {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.buy {
+  text-align: center;
+}
+
+.buy input {
+  width: 5rem !important;
+  height: 2.3rem;
+}
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  /* padding: 12px; */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  display: flex;
+  gap: 1rem;
+  /* margin-bottom: 20px; */
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--threeG);
+}
+
+.btn:hover {
+  background-color: var(--threeG);
+  color: var(--primary)
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact .php-email-form {
+    padding: 20px;
+  }
+
+  #flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .show-img {
+    height: 25rem;
+  }
+
+  #FU {
+    display: block;
+    background-color: rgba(8, 8, 8, 0.966) !important;
+  }
+}
+
+@media (max-width: 475px) {
+  .welcome-container {
+    padding: 0;
+    font-weight: bolder;
+    right: .5rem;
+    top: 6rem;
+  }
+
+  .signout-btn{
+    font-size: 20px;
+    padding: 0;
+    align-items: center;
+  }
+
+  .welcome-container h1 {
+    font-size: 1.5rem;
+    font-family: four;
+  }
+
+  .icon-container {
+    gap: .5rem;
+  }
+}

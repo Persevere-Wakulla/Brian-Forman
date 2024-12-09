@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome To Black Jack</h1>
+    <div class="playing-board">
+    <div class="computer-hand" id="computer-hand">
+        <div class="flip-card ">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <img class="cards" id="card-front" src="./assets/images/95248027-compass-rose-for-marine-or-nautical-navigation-on-a-white-background.jpg" alt="" >
+                </div>
+                <div class="cards flip-card-back">
+                  <img class="cards" src="" id="com1stcard">
+              </div>
+            </div>
+          </div>
+        <!-- <img class="cards" src="" id="com1stcard" alt=""> -->
+        <img class="cards game-card" src="" id="com2ndcard" alt="">
+    </div>
+    <div class="dealer">
+        <h2 id="winning-status"></h2>
+        <!-- <img src="./assets/images/95248027-compass-rose-for-marine-or-nautical-navigation-on-a-white-background.jpg" -->
+        <!-- id="deck" alt="cards"> -->
+    </div>
+        <div class="player-hand" id="my-hand">
+            <img class="cards game-card" src="" id="my1stcard" alt="">
+            <img class="cards game-card" src="" id="my2ndcard" alt="">
+        </div>
+    </div>
+    <div class="button-container">
+        <button type="button" id="deal">Play</button>
+        <button type="button" id="play-again">Play Again</button>
+        <button type="button" id="hit-me">Hit-Me</button>
+        <button type="button" id="stay">Stay</button>
+    </div>
+    <script src="./blackJack.js"></script>
+</body>
+
+</html>

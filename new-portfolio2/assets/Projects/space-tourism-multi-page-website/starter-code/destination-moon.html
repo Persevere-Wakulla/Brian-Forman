@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body class="destination">
+  <header>
+    <img class="logo" src="./assets/shared/logo.svg" alt="logo">
+    <hr class="line">
+    <nav>
+      <div class="nav-bar">
+        <a class="topNav" href="./index.html"> 00 Home</a>
+        <a class="topNav" href="./destination-moon.html">01 Destination</a>
+        <a class="topNav" href="./crew-commander.html">02 Crew</a>
+        <a class="topNav" href="./technology-vehicle.html">03 Technology</a>
+      </div>
+    </nav>
+  </header>
+  <main class="moon-main">
+    <div class="moon-head">
+      <h1><span class="one">01</span> Pick your destination</h1>
+      <div>
+        <img id="pic" class="moon" src="./assets/destination/image-moon.webp" alt="">
+      </div>
+    </div>
+    <div class="moon-left">
+    <div class="bottom-navbar">
+      <button class="moon-btn" id="moon" >Moon</button>
+      <button class="moon-btn" id="mars" >Mars</button>
+      <button class="moon-btn" id="europa" >Europa</button>
+      <button class="moon-btn" id="titan" >Titan</button>
+    </div>
+    <div class="middle-moon">
+    <h1 id="name">MOON</h1>
+    <p id="describe">See our planet as you’ve never seen it before. A perfect
+      relaxing trip away to help regain perspective and come
+      back refreshed. While you’re there, take in some history
+      by visiting the Luna 2 and Apollo 11 landing sites.
+
+    </p>
+    </div>
+    <hr>
+    <div class="moon-bottom">
+    <div class="distance">
+    <p class="top">Avg. distance</p>
+    <p id="distance" class="bottom">384,400 km</p>
+   </div>
+    <div class="time">
+    <p class="top"> Est. travel time</p>
+    <p id="travel" class="bottom">3 days</p>
+    </div>
+    </div>
+    </div>
+    <div id="sidebar-toggle" class="hamburger"></div>
+    <div class="nav-bar2">
+      <button type="button" class="close-btn">X</button>
+      <a href="./index.html"><span class="two">00</span>Home</a>
+      <a href="./destination-moon.html"><span class="two">01</span>Destination</a>
+      <a href="./crew-commander.html"><span class="two">02</span>Crew</a>
+      <a href="./technology-vehicle.html"><span class="two">03</span>Technology</a>
+    </div>
+  </main>
+  <script src="./home.js"></script>
+</body>
+
+</html>

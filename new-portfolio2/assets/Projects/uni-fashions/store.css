@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7b04b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+nav {
+    text-align: center;
+    margin: 1rem 0 0 4rem;
+}
+
+.logo {
+    margin: 1rem 0 0 2rem;
+    /* margin-right: 2rem; */
+}
+
+.head-btn {
+    display: flex;
+    gap: .5rem;
+}
+
+#search-bar {
+    width: 15rem;
+}
+.alert{
+    width: 100%;
+    display: flex;
+    margin: 1rem 0 0 1rem;
+    gap: .5rem;
+    
+}
+.name{
+    text-transform: capitalize;
+}
+
+.right{
+    display: flex;
+    gap: .5rem
+}
+#cart span{
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+#cart span:hover{
+    cursor: pointer;
+}
+.log-signIn-btn{
+    display: flex;
+    gap: .5rem;
+    margin-right: 1rem;
+}
+
+#sign-up {
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: crimson;
+    font-size: 16px;
+}
+
+#sign-up:hover {
+    opacity: 0.6;
+}
+
+#log-in {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: crimson;
+    background: none;
+}
+
+#log-in:hover {
+    opacity: 0.6;
+}
+
+.log:hover {
+    opacity: .6;
+    color: #000;
+}
+
+/* Set a style for all buttons */
+button:not(nav) {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn {
+    font-size: 18px;
+    color: black;
+    background: none;
+    align-items: center;
+    padding: 0;
+    width: 6rem;
+
+}
+
+.btn:hover {
+    color: #f44336;
+}
+
+.terms {
+    color: dodgerblue;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+
+
+.container {
+    padding: 16px;
+    background-color: #f1f1f1
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.shop {
+    font-size: 7rem;
+}
+
+form {
+    margin-left: 25%;
+}
+
+form.search input[type=text] {
+    gap: 5rem;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.search button {
+    float: left;
+    width: 15%;
+    padding: 8px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.search button:hover {
+    background: #0b7dda;
+}
+
+/* Clear floats */
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.search-container {
+    display: flex;
+
+}
+
+.now {
+    width: 20%;
+    height: 2.5rem;
+    background-color: crimson;
+    border-radius: 20%;
+    color: black;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+#cart-modal{
+    /* right: -65rem; */
+    /* top: 5rem; */
+    background-color: white;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    background: none;
+    text-align: right;
+    margin-left: -20%;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+#close-btn{
+    display: none;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.feature-top {
+    margin-left: 2rem;
+    position: relative;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.feature-line {
+    border-color: #000;
+    position: absolute;
+    width: 80%;
+    left: 10rem;
+    top: 1rem;
+}
+
+.featured-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+
+}
+
+
+
+.feature-title {
+    text-align: center;
+    width: 90%;
+    margin-bottom: .5rem;
+}
+
+.card {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.thumb-nail {
+    margin-top: 1.5rem;
+    width: 16rem;
+    height: 16rem;
+    margin-bottom: 1rem;
+}
+
+.thumb-nail:hover {
+    cursor: pointer;
+}
+
+.thumb-nail-one {
+    margin-top: 1.5rem;
+    width: 16rem;
+    height: 16rem;
+    margin-bottom: 1rem;
+}
+
+.card input {
+    width: 4rem;
+
+}
+
+.product-title {
+    text-align: center;
+    width: 75%;
+    margin-bottom: .5rem;
+}
+
+.buy {
+    display: flex;
+}
+
+.shop-now {
+    background-color: crimson;
+}
+
+.about-page {
+    display: none;
+}
+
+.about-top {
+    margin-left: 2rem;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.about-line {
+    border-color: #000;
+    position: absolute;
+    width: 80%;
+    left: 10rem;
+    top: 1rem;
+}
+
+.about-container{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.about-container h1{
+    margin-bottom: 2rem;
+}
+
+.about-container p{
+    margin-bottom: 2rem;
+}
+
+.product-page {
+    display: none;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.product-top {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.product-line {
+    border-color: #000;
+    position: absolute;
+    width: 80%;
+    left: 10rem;
+    top: 1rem;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 3rem;
+}
+
+.nav-sidebar {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-sidebar button {
+    margin-left: 2rem;
+    font-size: 24px;
+    width: 100%;
+    text-align: left;
+
+}
+
+.contact-page {
+    display: none;
+}
+
+.contact-top {
+    margin-left: 2rem;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.contact-line {
+    border-color: #000;
+    position: absolute;
+    width: 80%;
+    left: 10rem;
+    top: 1rem;
+}
+.contact-container{
+    width: 80%;
+    margin-top: 5rem;
+}
+
+.contact-container h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-container button{
+    width: 10rem;
+}
+
+.email{
+    height: 2.5rem;
+}
+
+.form-control{
+    width: 100%;
+}
+
+
+.modal-img {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: .5rem;
+}
+
+.description {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* #modal-container3 {
+    display: flex;
+    justify-content: center;
+} */
+#cancel2{
+    margin-left: 20%;
+}
+
+.card-popUp {
+    margin: 0 auto;
+    width: 60%;
+    justify-items: center;
+    display: grid;
+    text-align: center;
+}
+.cart-img{
+    margin-top: 3.5rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.remove{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #f44336;
+    width:5rem;
+    height: 2rem; 
+}
+.remove:hover{
+    cursor: pointer;
+}
+
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    
+
+    
+    
+}
+.cart-item{
+    
+    display: flex;
+   justify-content: space-between; 
+}
+
+.cart-top{
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+.check-t{
+    margin-top: 12rem;
+}
+
+.pm{
+    display: flex;
+    margin-right: 1rem;
+    gap: 1rem;
+    align-items: end;
+    
+}
+.check-p{
+    margin-top: .5rem;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./lizard.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <img src="./images/logo-bonus.svg" alt="logo">
+        <div class="score_box">
+          <p>Score <br><span id="score" class="score-number">20</span></p>
+        </div>
+      </div>
+    </header>
+    <div id="selection-board" class="main-container">
+      <img id="bg-pentagon" src="images/bg-pentagon.svg" alt="bg-pentagon">
+      <span class="game-piece" id="paper">
+        <img src="./images/icon-paper.svg" alt="paper">
+      </span>
+      <span class="game-piece" id="rock">
+        <img src="./images/icon-rock.svg" alt="rock">
+      </span>
+      <span class="game-piece" id="scissors">
+        <img src="./images/icon-scissors.svg" alt="scissors">
+      </span>
+      <span class="game-piece" id="lizard">
+        <img src="./images/icon-lizard.svg" alt="lizard">
+      </span>
+      <span class="game-piece" id="spock">
+        <img src="./images/icon-spock.svg" alt="spock">
+      </span>
+    </div>
+    <div id="playing-board">
+      <div>
+        <h2 id="player_pick">You picked</h2>
+        <div class="generic-piece" id="user-selection">
+          <img alt="" src="">
+        </div>
+      </div>
+      <div class="mid">
+        <h1 id="winning-status"></h1>
+        <button type="button" id="play_again">Play Again</button>
+      </div>
+      <div>
+        <h2 id="computer_pick">The House Picked</h2>
+        <div class="generic-piece" id="computer-selection">
+          <img src="" alt="">
+        </div>
+      </div>
+    </div>
+      <footer>
+        <div class="buttons">
+        <button id="rules" type="button" popovertarget="my-popover">Rules</button>
+        <div popover id="my-popover">
+          <img src="./images/image-rules-bonus.svg" alt="rule button">
+        </div>
+        <a id="home" href="../../index.html">Home</a>
+      </div>
+      </footer>
+    </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Brian Formman</a>.
+  </div>
+  <script src="./lizard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+*{
+    margin: 0 auto ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.wrapper{
+    background: no-repeat radial-gradient(rgba(62, 44, 233, 0.685), hsl(214, 47%, 23%));
+    min-height: 100vh;
+    
+    
+}
+header{
+    text-align: center;
+    padding: 3rem;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: rgb(187, 12, 12) 2px 5px ;
+    color: rgb(36, 33, 165);
+    font-size: 4rem;
+}
+h2{
+    margin-bottom: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.game_1 h2{
+    color: darkblue;
+    text-shadow: rgb(49, 46, 192) 2px 3px;
+}
+.game_2 h2{
+    color: crimson;
+    text-shadow:rgb(187, 12, 12) 2px 3px ;
+}
+img{
+    width: 100%;
+}
+#rps{
+    box-shadow: .3rem .3rem .3rem .3rem rgb(49, 46, 192);
+}
+#lizard{
+    box-shadow: .3rem .3rem .3rem .3rem rgb(187, 12, 12);
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 1rem; */
+}
+.game_1{
+    /* border: 2px solid black; */
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+.game_2{
+    /* border: 2px solid black; */
+    width:100%;
+    padding: 1rem;
+    text-align: center;
+}
+@media (max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 1.6rem;
+    }
+
+    
+    
+}

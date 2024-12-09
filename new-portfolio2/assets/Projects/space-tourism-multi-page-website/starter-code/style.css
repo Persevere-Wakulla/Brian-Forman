@@ -1,0 +1,1014 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    padding: 3rem 2rem 2rem 3rem;
+}
+
+.line {
+    position: absolute;
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.533);
+    margin-left: 10rem;
+    width: 45rem;
+    z-index: 1000;
+}
+.nav-bar2{
+    display: none;
+}
+.nav-bar {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.064);
+    width: 55vw;
+    backdrop-filter: blur(10px);
+
+    /* border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px; */
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 5rem;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.nav-bar a:hover {
+    border-bottom: 3px solid rgba(169, 169, 169, 0.427);
+
+}
+
+
+
+.home {
+    background: url(./assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    color: white;
+
+}
+
+.home-main {
+    display: flex;
+    margin-top: 5rem;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left h2 {
+    color: rgba(255, 255, 255, 0.803);
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.left h1 {
+    font-weight: 200;
+    font-size: 150px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.left p {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.803);
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.left {
+    width: 50%;
+    padding: 10rem;
+}
+
+.right {
+    width: 50%;
+}
+
+.right a {
+    font-size: 16px;
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15rem;
+    text-decoration: none;
+
+}
+
+.right a:hover {
+    box-shadow: 1px 2px 20px 30px rgba(189, 106, 18, 0.758);
+}
+
+.destination {
+    background: url(./assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.moon-main {
+    display: flex;
+    gap: 7rem;
+}
+
+.moon-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    color: white;
+    margin-left: 9rem;
+    padding: 5rem;
+    margin-top: 9rem;
+}
+
+.moon-left h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+}
+
+.moon-left p {
+    width: 70%;
+    color: lightgray;
+    /* font-size: 16px; */
+}
+
+.moon {
+    margin-left: 12rem;
+}
+
+.moon-head h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+
+.moon-bottom {
+    display: flex;
+    padding: 1rem;
+}
+
+.middle-moon p {
+    font-size: 20px;
+    color: darkgrey;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.moon-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: darkgray;
+    font-size: 20px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+
+}
+
+.moon-btn:hover {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+hr {
+    margin-top: 2rem;
+    /* margin-bottom: 1rem; */
+    width: 65%;
+    color: rgba(87, 84, 84, 0.798);
+}
+
+.distance {
+    width: 40%;
+
+}
+
+.one {
+    color: darkgray;
+}
+
+.top {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.355);
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+.bottom {
+    font-size: 28px;
+    color: white;
+}
+
+.time {
+    width: 40%;
+}
+
+.crew {
+    background: url(./assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+
+}
+
+.crew-sec {
+    display: flex;
+}
+
+.crew-left {
+    margin-top: 3rem;
+    padding: 5rem;
+    margin-left: 8rem;
+
+}
+
+.crew-left h3 {
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 10rem;
+
+}
+
+.crew-left h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 3.2rem;
+    color: darkgray;
+    font-weight: 100;
+
+}
+
+.crew-left h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.crew-left p {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+    color: darkgray;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.dot-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(211, 211, 211, 0.234);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 5rem;
+}
+
+.active {
+    background-color: white;
+}
+
+.active2 {
+    border-bottom: 3px solid white;
+}
+
+
+.dot:hover {
+    background-color: darkgrey;
+}
+
+
+
+.crew-right {
+    margin-top: 15rem;
+    margin-right: 10rem;
+}
+
+.mobile-crew {
+    display: none;
+}
+
+.technology {
+    background: url(./assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.launch-img {
+    width: 40rem;
+}
+
+.technology-main {
+    margin-top: 10rem;
+    margin-left: 18rem;
+}
+
+.technology-main h2 {
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 300;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+.flip{
+    display: flex;
+    gap: 5rem;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-size: 36px;
+    background: none;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 2rem;
+    border-radius: 50%;
+    color: white;
+}
+
+.btn:active {
+    background-color: white;
+    color: black;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+
+
+.mid-section {
+    width: 35rem;
+    margin-right: 5rem;
+
+
+}
+
+.mid-section h1 {
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 2rem;
+
+
+}
+
+.mid-section h4 {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: darkgray;
+    margin-top: 9rem;
+    margin-bottom: 1rem;
+}
+
+.mid-section p {
+    width: 90%;
+    color: white;
+    font-size: 20px;
+    color: darkgray;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+}
+.selected{
+    border-bottom: 4px solid white;
+}
+.active3 {
+    background-color: white;
+    color: black;
+}
+@media (max-width: 800px) {
+
+    header {
+        justify-content: unset;
+        gap: 14.5rem;
+        align-items: unset;
+
+    }
+
+
+    .logo {
+        padding: 1rem 2rem 2rem 3rem;
+    }
+
+    .nav-bar {
+        margin-top: 0rem;
+    }
+
+    .nav-bar a {
+        font-size: 14px;
+        margin-left: .5rem;
+
+    }
+
+    .line {
+        display: none;
+    }
+
+    .home {
+        background: url(./assets/home/background-home-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100vh;
+
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: unset;
+    }
+
+    .left p {
+        display: grid;
+        text-align: center;
+        width: 55%;
+        font-size: 18px;
+    }
+
+    .left h1 {
+        font-size: 10rem;
+    }
+
+    .left h2 {
+        font-size: 24px;
+    }
+
+    .home-main {
+        margin-top: 7rem;
+        display: grid;
+        gap: 8rem;
+
+    }
+
+    .right {
+        margin-left: 3rem;
+    }
+
+    .right a {
+        width: 15rem;
+        height: 15rem;
+
+    }
+
+    .destination {
+        background: url(./assets/destination/background-destination-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100vh;
+
+    }
+
+    .moon-main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+        gap: 3rem;
+
+    }
+
+    .moon {
+        margin-top: 2rem;
+        padding: 0;
+        width: 19rem;
+        height: 19rem;
+        margin-left: 9.5rem;
+    }
+
+    .moon-head h1 {
+        font-size: 20px;
+        margin-top: 2rem;
+        margin-left: -1rem;
+    }
+
+    .moon-left {
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: unset;
+    }
+
+    .middle-moon p {
+        font-size: 18px;
+        width: 35rem;
+        text-align: center;
+        margin-left: 2rem;
+    }
+
+    .middle-moon h1 {
+        font-size: 6rem;
+        margin-left: 10rem;
+        font-weight: 100;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .moon-bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bottom-navbar {
+        margin-left: 8rem;
+        font-size: 16px;
+
+    }
+
+
+    .distance {
+        width: 50%;
+
+    }
+
+    .top {
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+
+    hr {
+        width: 35rem;
+        margin-left: 2.5rem;
+    }
+
+    .time {
+        width: 50%;
+    }
+
+    .crew {
+        background: url(./assets/crew/background-crew-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100vh;
+    }
+
+    .crew-sec {
+        flex-direction: column;
+    }
+
+    .crew-left {
+        margin-right: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 0;
+        text-align: center;
+    }
+
+    .crew-left h3 {
+        margin-bottom: 0;
+        font-size: 20px;
+        margin-left: -35rem;
+        margin-top: 2rem;
+    }
+
+    .crew-left h2 {
+        font-size: 30px;
+        margin-top: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .crew-left h1 {
+        font-size: 46px;
+        margin-bottom: 1.5rem;
+    }
+
+    .crew-left p {
+        font-size: 18px;
+        width: 35rem;
+        margin-left: 2rem;
+    }
+
+    .dot-container {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    .dot {
+        margin-top: 0;
+    }
+
+    .crew-right {
+        margin-top: 0;
+        margin-left: 11rem;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .crew-right img {
+        margin-top: 4.5rem;
+        width: 20rem;
+        height: 20rem;
+
+    }
+
+    .technology {
+        background: url(./assets/technology/background-technology-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100vh;
+    }
+
+    .launch-img {
+        height: 300px;
+        width: 100%;
+    }
+
+
+    .mid-section {
+        width: 100%;
+    }
+
+    .technology-main {
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+
+    .flip{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    
+    .mid-section h1 {
+        font-size: 36px;
+    }
+    
+    .btn-container {
+        margin-top: 1rem;
+        flex-direction: row;
+    }
+    .btn {
+        padding: 1.5rem;
+
+    }
+    .mid-section h4{
+        margin-top: 2rem;
+    }
+
+    .container {
+        gap: 0;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .technology-main h2 {
+        font-size: 20px;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+    }
+
+    .mid-section p {
+        margin-left: 5rem;
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 375px) {
+    header {
+        justify-content: unset;
+        gap: 1rem;
+    }
+
+    header img {
+        margin-top: 1rem;
+        height: 6rem;
+        padding: 0;
+    }
+
+    .logo {
+        margin-left: -2rem;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 2.5rem;
+        right: 2rem;
+        background-image: url(./assets/shared/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        width: 30px;
+        height: 30px;
+        transition: 0.3s
+    }
+
+    .hamburger:hover {
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
+
+    .nav-bar2 {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: .1rem;
+        right: .1rem;
+        width: 15rem;
+        height: 99vh;
+        font-size: 24px;
+        background-color: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(10px);
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .two {
+        font-weight: 800;
+        color: white;
+    }
+
+    .nav-bar2 a {
+        padding: 0 0 1rem 1rem;
+        display: flex;
+        gap: 1rem;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.895);
+        transition: all .5s;
+        font-weight: 100;
+    }
+
+    .nav-bar2 a:hover {
+        border-right: 4px solid white;
+        transform: translateX(-10px);
+    }
+
+    .close-btn {
+        display: flex;
+        font-size: 24px;
+        background: none;
+        padding: .5rem;
+        color: red;
+        border: none;
+        margin-bottom: 5rem;
+        justify-content: flex-end;
+
+    }
+
+    .close-btn:hover {
+        cursor: pointer;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+
+
+    .home {
+        background: url(./assets/home/background-home-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100vh;
+    }
+
+    .left h1 {
+        font-size: 6rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .left h2 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .left p {
+        letter-spacing: 2px;
+        width: unset;
+        padding: 1rem;
+    }
+
+    .right a {
+        margin-left: 2rem;
+    }
+
+    .destination {
+        background: url(./assets/destination/background-destination-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .bottom-navbar {
+        margin-left: 1rem;
+    }
+
+    .moon {
+        width: 15rem;
+        height: 15rem;
+        margin-left: 0;
+    }
+
+    .moon-head {
+        margin-left: 5rem;
+    }
+
+    .moon-head h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .moon-main {
+        margin-left: 0;
+    }
+
+    .middle-moon h1 {
+        margin-left: 5rem;
+        margin-top: 1rem;
+        font-size: 4rem;
+    }
+
+    .middle-moon p {
+        letter-spacing: 2px;
+        width: 20rem;
+    }
+
+    hr {
+        width: 18rem;
+    }
+
+    .moon-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+
+    }
+
+    .time .top {
+        left: 4rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .time .bottom {
+        width: unset;
+        text-transform: uppercase;
+    }
+
+    .distance .top {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .distance .bottom {
+        margin-left: -5rem;
+        width: 20rem;
+        text-transform: uppercase;
+    }
+
+    .crew {
+        background: url(./assets/crew/background-crew-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+    }
+
+    .crew-left h3 {
+        top: 5rem;
+        position: absolute;
+        right: 4rem;
+    }
+
+    .crew-left p {
+        letter-spacing: 2px;
+        margin-left: -.5rem;
+        width: 18rem;
+    }
+
+    .crew-left h2 {
+        font-size: 18px;
+        margin-top: 2rem;
+    }
+
+    .crew-left h1 {
+        font-size: 22px;
+    }
+
+    .crew-sec {
+        flex-direction: column-reverse;
+    }
+
+    .crew-left {
+        margin-left: 2.5rem;
+        flex-direction: column-reverse;
+    }
+
+    .dot-container {
+        margin-top: -2rem;
+
+    }
+
+    .crew-right {
+        margin-left: 1rem;
+        flex-direction: column;
+    }
+
+    .crew-right img {
+        margin-left: 1rem;
+        margin-top: 4rem;
+    }
+
+    .mobile-crew {
+        display: block;
+    }
+
+    .technology {
+        background: url(./assets/technology/background-technology-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .technology-main {
+        margin-top: 0;
+    }
+
+    .technology-main h2 {
+        margin-left: 4rem;
+    }
+    .launch-img{
+        height: 200px;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+ 
+    .btn{
+        padding: 1rem;
+    }
+    .mid-section p{
+        letter-spacing: 2px;
+        width: 75%;
+        margin-left: 3rem;
+    
+    }
+
+
+
+}
